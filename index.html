@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="menu">
+        <button>Tell me the story</button>
+        <button onclick="gotoQuestion()">Ask a question</button>
+        <button>Reveal the secret</button>
+    </div>
+    <div id="questionDiv">
+        <h2>I KNOW EVERYTHING !?...</h2>
+        <label>
+            Ask a question and put "?" at the end:
+            <input class="default_input" id="yourQuestion" type="text" />
+        </label>
+        <br/>
+        <label>
+            Request Mikac to answer it:
+            <input class="default_input" id="request" type="text" oninput="requestInput(event)" onkeydown="idontknow(event)" />
+        </label>
+        <br/>
+        <p>All letters must be lower-cased</p>
+        <button onclick="answer1()">Answer</button>
+        <button onclick="gotoMenu()">Go to Menu</button>
+    </div>
+    <div id="answerDiv">
+        <h2 id="questionH2"></h2>
+        <br/>
+        <h2 id="rndLabels"></h2>
+        <div id="progress_parent">
+            <div id="progress_child">
+                
+            </div>
+        </div>
+        <div id="answerAfterProgress">
+            <h2 id="answerH2"></h2>
+            <button onclick="gotoQuestion()">Ask another question</button>
+            <button onclick="gotoMenu()">Go to Menu</button>
+        </div>
+        <br/>
+        <br/>
+        <p class="rndNumbers"></p>
+        <p class="rndNumbers"></p>
+        <p class="rndNumbers"></p>
+        <p class="rndNumbers"></p>
+        <p class="rndNumbers"></p>
+        <p class="rndNumbers"></p>
+        <p class="rndNumbers"></p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+body {
+    background: linear-gradient(to right, black 75%, #0f0);
+}
+
+p, h2, h1, label {
+    color: #0f0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    font-size: 14px;
+	background-color: black;
+	color: #ff4500;
+    border: 1px solid #ff4500;
+    transition-duration: 0.4s;
+    font-weight: 550;
+}
+
+button:hover {
+    font-size: 14px;
+	background-color: #ff4500;
+    color: white;
+    border: 1px solid #ff4500;
+    cursor: pointer;
+}
+
+span {
+    color: orange;
+    transition-duration: 0.5s;
+}
+
+#menu {
+    display: none;
+}
+
+#questionDiv {
+    display: block;
+}
+
+#answerDiv {
+    display: none;
+}
+
+#answerAfterProgress {
+    display: none;
+}
+
+#progress_parent {
+    display: none;
+	background-color: rgba(128,128,128, 0.3);
+	width: 100%;
+	max-width: 700px;
+	height: 30px;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+}
+
+#progress_child {
+	background-color: #0f0;
+	width: 0%;
+	height: 30px;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+}
+
+.rndNumbers {
+	display: inline;
+}
+
+/* INPUT */
+.default_input {
+    padding: 10px;
+	height: 18pt;
+	transition-duration: 0.4s;
+    color: #0f0;
+    font-size: 32px;
+	background: black;
+	border: 1.5px solid #0f0;
+}
+
+.default_input:focus {
+	background: white;
+	color: black;
+	border-radius: 11px;
+	transition-duration: all 0.7s;
+}
+
+/* disable outline when focused */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
